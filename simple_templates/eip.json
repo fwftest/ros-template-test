@@ -1,0 +1,37 @@
+{
+  "ROSTemplateFormatVersion": "2015-09-01",
+  "Parameters": {
+    "Bandwidth": {
+      "Type": "Number",
+      "Default": 5
+    }
+  },
+  "Resources": {
+    "Eip": {
+      "Type": "ALIYUN::VPC::EIP",
+      "Properties": {
+        "Bandwidth": {
+          "Ref": "Bandwidth"
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "EipAddress": {
+      "Value": {
+        "Fn::GetAtt": [
+          "Eip",
+          "EipAddress"
+        ]
+      }
+    },
+    "AllocationId": {
+      "Value": {
+        "Fn::GetAtt": [
+          "Eip",
+          "AllocationId"
+        ]
+      }
+    }
+  }
+}
