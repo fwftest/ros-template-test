@@ -3,7 +3,7 @@
   "Parameters": {
     "Bandwidth": {
       "Type": "Number",
-      "Default": 5
+      "Default": 6
     }
   },
   "Resources": {
