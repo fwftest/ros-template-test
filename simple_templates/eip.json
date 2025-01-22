@@ -1,18 +1,10 @@
 {
   "ROSTemplateFormatVersion": "2015-09-01",
-  "Parameters": {
-    "Bandwidth": {
-      "Type": "Number",
-      "Default": 6
-    }
-  },
   "Resources": {
     "Eip": {
       "Type": "ALIYUN::VPC::EIP",
       "Properties": {
-        "Bandwidth": {
-          "Ref": "Bandwidth"
-        }
+        "Bandwidth": 6
       }
     }
   },
