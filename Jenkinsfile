@@ -8,7 +8,7 @@ pipeline {
             steps {
                 // 从 GitHub 仓库拉取最新的代码
                 checkout scm
-                echo 'Checked out the latest code.'
+                echo 'Checked out the latest code.' 
             }
         }
         stage('Build') {
