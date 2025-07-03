@@ -1,0 +1,19 @@
+{
+  "ROSTemplateFormatVersion": "2015-09-01",
+  "Parameters": {
+    "VpcName": {
+      "Type": "String"
+    }
+  },
+  "Resources": {
+    "Vpc": {
+      "Type": "ALIYUN::ECS::VPC",
+      "Properties": {
+        "CidrBlock": "192.168.0.0/24",
+        "VpcName": {
+          "Ref": "VpcName"
+        }
+      }
+    }
+  }
+}
