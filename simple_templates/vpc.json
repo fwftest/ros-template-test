@@ -3,7 +3,7 @@
   "Parameters": {
     "VpcName": {
       "Type": "String",
-      "Default": "t1_new"
+      "Default": "t1_new1"
     }
   },
   "Resources": {
