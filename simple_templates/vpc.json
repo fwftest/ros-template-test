@@ -2,7 +2,8 @@
   "ROSTemplateFormatVersion": "2015-09-01",
   "Parameters": {
     "VpcName": {
-      "Type": "String"
+      "Type": "String",
+      "Default": "t1"
     }
   },
   "Resources": {
